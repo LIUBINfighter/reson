@@ -1,0 +1,21 @@
+{
+  "name": "reson",
+  "private": true,
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev": "pnpm --filter @reson/web dev",
+    "dev:web": "pnpm --filter @reson/web dev",
+    "dev:web:host": "pnpm --filter @reson/web dev -- --host 127.0.0.1 --port 5173",
+    "dev:desktop": "pnpm --filter @reson/desktop dev",
+    "dev:mobile": "pnpm --filter @reson/mobile dev",
+    "build": "pnpm -r build",
+    "build:web": "pnpm --filter @reson/web build",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "check": "biome check ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.8.3"
+  }
+}
